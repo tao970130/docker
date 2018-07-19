@@ -4,8 +4,8 @@ MAINTAINER jtz
 
 #yum
 RUN yum -y update &&\
-	yum -y install pcre pcre-devel zlib openssl openssl-devel &&\
-    yum -y install wget &\
+    yum -y install wget &&\
+    yum -y install pcre pcre-devel zlib openssl openssl-devel &&\
 	yum clean all
 
 #nginx
