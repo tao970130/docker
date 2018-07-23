@@ -7,4 +7,6 @@ LABEL org.label-schema.schema-version = "1.0" \
     org.label-schema.license="GPLv2" \
     org.label-schema.build-date="20180531"
 
+RUM  yum -y install wget &&\ 
+
 CMD ["/bin/bash"]

@@ -4,9 +4,7 @@ MAINTAINER jtz
 
 #yum
 RUN yum -y update &&\
-    yum -y install wget &&\
-    yum provides '*/applydeltarpm' &&\
-    yum install deltarpm &&\
+    yum install telnet -y &&\
     yum -y install pcre pcre-devel zlib openssl openssl-devel &&\
 	yum clean all
 
